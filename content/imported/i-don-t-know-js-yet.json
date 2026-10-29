@@ -1,0 +1,9 @@
+{
+  "slug": "i-don-t-know-js-yet",
+  "title": "I Don't Know JS Yet (Weekly Updated)",
+  "description": "When I started my web development journey(roughly 2 years ago), my first experience was with legacy c...",
+  "date": "2020-10-30",
+  "source": "Dev.to",
+  "canonical": "https://dev.to/thehumzahasan/i-don-t-know-js-yet-1fhc",
+  "html": "<p>When I started my <strong>web development journey</strong>(roughly 2 years ago), my <strong>first experience</strong> was with <strong>legacy codebase with pre-ES6 syntax</strong>. It was ok-ish to honest cause I had no idea about the existence of ES6+ syntax.</p>\n\n<p>Fast forward to today where ES6 is pretty much the benchmark, and after doing a dozen of projects using Vanilla JS(using ES5 and ES6+ syntax) with intermediate experience in ReactJS as well. <strong>I decided to jot down my learnings in this Series 'I Don't Know JS Yet'</strong>.</p>\n\n<p>Head over to the below articles where we start from the stepping stone of Javascript and move our way towards intermediate level 👇 </p>\n\n<p>👉<a href=\"https://dev.to/thehumzahasan/i-don-t-know-js-yet-declaration-and-scope-4hpf\">Declaration and Scope</a> <strong>(Published)</strong></p>\n\n<p>👉<a href=\"https://dev.to/thehumzahasan/i-don-t-know-js-yet-hoisting-4c0j\">Hoisting</a> <strong>(Published)</strong></p>\n\n<p>🤚Next article publishing soon.</p>\n\n<p>Follow me to get notified as soon as I publish an article in this series.</p>\n\n<p><a href=\"https://www.instagram.com/codewithbravopy\" target=\"_blank\" rel=\"noopener noreferrer\">Hit Me up on Instagram</a> or <a href=\"https://www.linkedin.com/in/humzahasannit/\" target=\"_blank\" rel=\"noopener noreferrer\">Let's Connect on LinkedIn</a></p>"
+}

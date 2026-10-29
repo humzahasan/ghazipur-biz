@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: meta.title,
     description: meta.description,
-    alternates: { canonical: path },
+    // Imported posts point search engines at the original so they don't count as duplicates.
+    alternates: { canonical: meta.canonical ?? path },
     authors: [{ name: site.name, url: site.url }],
     openGraph: {
       type: "article",
@@ -46,7 +47,7 @@ export default async function PostPage({ params }: Props) {
           description: meta.description,
           datePublished: meta.date,
           url,
-          mainEntityOfPage: url,
+          mainEntityOfPage: meta.canonical ?? url,
           image: `${site.url}/opengraph-image`,
           author: { "@type": "Person", "@id": personId, name: site.name, url: site.url },
           publisher: { "@type": "Person", "@id": personId, name: site.name },
@@ -59,6 +60,12 @@ export default async function PostPage({ params }: Props) {
         <h1>{meta.title}</h1>
         <p className="post-meta">
           <time dateTime={meta.date}>{formatDate(meta.date)}</time> · {site.name}
+          {meta.source && meta.canonical && (
+            <>
+              {" "}
+              · Originally published on <a href={meta.canonical}>{meta.source}</a>
+            </>
+          )}
           {meta.devto && (
             <>
               {" "}

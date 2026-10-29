@@ -44,12 +44,11 @@ Every placeholder is marked `TODO` in `content/site.ts`.
 
 1. **Domain**: set `site.url`. It drives canonical URLs, the sitemap, Open Graph and schema.
 2. **Photo**: replace `public/humza-hasan.jpg` with a real square photo (800px or more). Keep the filename.
-3. **Email**: set `site.email`.
-4. **Resume**: drop a PDF in `public/` and point `site.resumeUrl` at it. It links to LinkedIn for now.
-5. **Instagram**: add the URL. It then shows in the footer, the side project card and `sameAs`.
-6. **Case study numbers**: add real results to `caseStudies` (load time, release frequency, users).
-7. **Sonar Studio link** and the Publicis Sapient start year.
-8. The starter post in `content/posts/` is a draft. Rewrite it or replace it.
+3. **Resume**: drop a PDF in `public/` and point `site.resumeUrl` at it. It links to LinkedIn for now.
+4. **Instagram**: add the URL. It then shows in the footer, the side project card and `sameAs`.
+5. **Case study numbers**: add real results to `caseStudies` (load time, release frequency, users).
+6. The Publicis Sapient start year.
+7. The starter post in `content/posts/` is a draft. Rewrite it or replace it.
 
 ## Writing a post
 
@@ -67,6 +66,8 @@ Post body in Markdown.
 ```
 
 It gets a page, Article schema, a sitemap entry and a spot on the home page automatically.
+
+**Importing from Dev.to and Medium**: `npm run import-posts` pulls every article into `content/imported/*.json`. Commit the result. Imported posts get their own page here, with a canonical link to the original so Google doesn't treat them as duplicates. Medium's feed only returns the latest 10 posts, so older ones need a Medium export. If you move a post's home here, set Dev.to's `canonical_url` to the humzahasan.in page and delete `canonical` from its JSON.
 
 **Cross-posting to Dev.to**: publish here first, then post on Dev.to with `canonical_url: https://humzahasan.in/writing/my-slug` in the front matter. Google credits this site, Dev.to still gets the readers. Medium works the same way: use **Import a story** with the post URL and it sets the canonical link for you.
 
