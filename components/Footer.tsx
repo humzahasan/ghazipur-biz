@@ -13,7 +13,11 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container">
         <p className="muted">
-          © {new Date().getFullYear()} {site.name}. Built with Next.js in {site.location}.
+          © {new Date().getFullYear()} {site.name}. Brewed with Next.js and late-night coffee in {site.location}, after 9-to-9 days and on weekends. Also stirring{" "}
+          <a href="https://querystack.in/" target="_blank" rel="noopener">
+            QueryStack
+          </a>
+          .
         </p>
         <ul className="footer-links">
           {links.map((link) => (
