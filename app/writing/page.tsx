@@ -21,6 +21,10 @@ export default async function WritingPage() {
           Everything is published here first. Some posts also live on{" "}
           <a href={site.socials.devto} target="_blank" rel="noopener">
             Dev.to
+          </a>{" "}
+          and{" "}
+          <a href={site.socials.medium} target="_blank" rel="noopener">
+            Medium
           </a>
           .
         </p>

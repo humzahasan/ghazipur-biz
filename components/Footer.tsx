@@ -6,6 +6,7 @@ export function Footer() {
     { href: site.socials.linkedin, label: "LinkedIn" },
     { href: site.socials.github, label: "GitHub" },
     { href: site.socials.devto, label: "Dev.to" },
+    { href: site.socials.medium, label: "Medium" },
     { href: site.socials.instagram, label: "Instagram" },
   ].filter((link) => link.href);
 

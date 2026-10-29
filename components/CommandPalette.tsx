@@ -53,6 +53,7 @@ export function CommandPalette() {
       { id: "linkedin", label: "LinkedIn", hint: "link", run: visit(site.socials.linkedin) },
       { id: "github", label: "GitHub", hint: "link", run: visit(site.socials.github) },
       { id: "devto", label: "Dev.to", hint: "link", run: visit(site.socials.devto) },
+      { id: "medium", label: "Medium", hint: "link", run: visit(site.socials.medium) },
     ];
   }, [router]);
 
