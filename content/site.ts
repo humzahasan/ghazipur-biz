@@ -20,6 +20,7 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/humza-hasan/",
     github: "https://github.com/humzahasan",
     devto: "https://dev.to/thehumzahasan",
+    medium: "https://medium.com/@humzahasan",
     // TODO: add your Instagram URL. Empty values are left out of the page and the schema.
     instagram: "",
   },

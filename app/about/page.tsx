@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
           <p>
             Outside work I build side projects like <a href="https://querystack.in/">QueryStack</a>,{" "}
-            <a href="https://github.com/humzahasan/readme-genie-magic">ReadmeGenie</a> and Sonar Studio, write on <a href={site.socials.devto}>Dev.to</a>,
+            <a href="https://github.com/humzahasan/readme-genie-magic">ReadmeGenie</a> and Sonar Studio, write on <a href={site.socials.devto}>Dev.to</a> and <a href={site.socials.medium}>Medium</a>,
             and explain how apps like Swiggy and Blinkit work under the hood. I live in {site.location}.
           </p>
           <p>
