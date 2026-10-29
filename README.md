@@ -1,6 +1,6 @@
 # humzahasan.dev
 
-Personal site for Humza Hasan. Next.js App Router, fully static, built for Vercel.
+Personal site for Humza Hasan. Next.js App Router, fully static, deployed on Netlify.
 
 ## Run it
 
@@ -10,6 +10,13 @@ npm run dev
 ```
 
 `npm run build` prerenders every page. `npm run typecheck` runs TypeScript.
+
+## Deploy on Netlify
+
+1. In Netlify, **Add new project > Import an existing project**, pick GitHub and this repo.
+2. Leave the build settings alone. `netlify.toml` sets the build command, publish directory and Node 22, and Netlify adds its Next.js runtime on its own.
+3. Deploy. Every push to `main` redeploys; pull requests get preview URLs.
+4. Under **Domain management**, add your domain and set it as primary, then make sure `site.url` in `content/site.ts` matches it. Netlify redirects the `*.netlify.app` address to the primary domain, and canonical URLs already point at `site.url`, so Google only indexes the real domain.
 
 ## Structure
 
