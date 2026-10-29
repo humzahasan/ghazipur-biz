@@ -44,7 +44,8 @@ export default function AboutPage() {
             Module Federation, and helping lots of teams ship into one product without stepping on each other.
           </p>
           <p>
-            Outside work I build side projects like Sonar Studio, write on <a href={site.socials.devto}>Dev.to</a>,
+            Outside work I build side projects like <a href="https://querystack.in/">QueryStack</a>,{" "}
+            <a href="https://github.com/humzahasan/readme-genie-magic">ReadmeGenie</a> and Sonar Studio, write on <a href={site.socials.devto}>Dev.to</a>,
             and explain how apps like Swiggy and Blinkit work under the hood. I live in {site.location}.
           </p>
           <p>

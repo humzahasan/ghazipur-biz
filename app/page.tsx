@@ -3,7 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { caseStudies, sideProjects, site, stats } from "@/content/site";
 import { formatDate, getAllPosts } from "@/lib/posts";
-import { personSchema, websiteSchema } from "@/lib/schema";
+import { personSchema, projectsSchema, websiteSchema } from "@/lib/schema";
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -16,6 +16,7 @@ export default async function Home() {
     <>
       <JsonLd data={personSchema} />
       <JsonLd data={websiteSchema} />
+      <JsonLd data={projectsSchema} />
 
       <section className="hero container" aria-labelledby="hero-title">
         <div className="hero-grid">
@@ -109,6 +110,11 @@ export default async function Home() {
               {project.url && (
                 <a className="card-link" href={project.url} target="_blank" rel="noopener">
                   Visit {project.name} ↗
+                </a>
+              )}
+              {project.source && (
+                <a className="card-link" href={project.source} target="_blank" rel="noopener">
+                  Source on GitHub ↗
                 </a>
               )}
             </article>
