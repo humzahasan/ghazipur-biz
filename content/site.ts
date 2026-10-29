@@ -2,8 +2,7 @@
 
 export const site = {
   name: "Humza Hasan",
-  // TODO: replace with the real domain once bought.
-  url: "https://humzahasan.dev",
+  url: "https://humzahasan.in",
   jobTitle: "Senior Experience Engineer",
   employer: { name: "Publicis Sapient", url: "https://www.publicissapient.com" },
   location: "Noida, India",
@@ -11,7 +10,7 @@ export const site = {
   description:
     "Humza Hasan is a frontend engineer in Noida, India with 7+ years of React and TypeScript experience, building micro-frontends at scale at Publicis Sapient.",
   // TODO: replace with a real inbox on your domain.
-  email: "hello@humzahasan.dev",
+  email: "hello@humzahasan.in",
   // TODO: point this at /humza-hasan-resume.pdf once the PDF is in /public.
   resumeUrl: "https://www.linkedin.com/in/humza-hasan/",
   // TODO: replace public/humza-hasan.jpg with a real photo (square, at least 800px).

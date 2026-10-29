@@ -1,4 +1,4 @@
-# humzahasan.dev
+# humzahasan.in
 
 Personal site for Humza Hasan. Next.js App Router, fully static, deployed on Netlify.
 
@@ -68,7 +68,7 @@ Post body in Markdown.
 
 It gets a page, Article schema, a sitemap entry and a spot on the home page automatically.
 
-**Cross-posting to Dev.to**: publish here first, then post on Dev.to with `canonical_url: https://humzahasan.dev/writing/my-slug` in the front matter. Google credits this site, Dev.to still gets the readers. Medium works the same way: use **Import a story** with the post URL and it sets the canonical link for you.
+**Cross-posting to Dev.to**: publish here first, then post on Dev.to with `canonical_url: https://humzahasan.in/writing/my-slug` in the front matter. Google credits this site, Dev.to still gets the readers. Medium works the same way: use **Import a story** with the post URL and it sets the canonical link for you.
 
 ## After launch
 
