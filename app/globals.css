@@ -656,6 +656,19 @@ p {
   color: var(--muted);
 }
 
+.post-source {
+  font: 12px var(--font-mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
 .post-meta {
   font: 14px var(--font-mono);
   color: var(--muted);

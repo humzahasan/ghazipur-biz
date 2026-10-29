@@ -18,7 +18,7 @@ export default async function WritingPage() {
         <p className="eyebrow">Writing</p>
         <h1>Notes from the frontend</h1>
         <p>
-          Everything is published here first. Some posts also live on{" "}
+          New posts go up here first. Older ones started life on{" "}
           <a href={site.socials.devto} target="_blank" rel="noopener">
             Dev.to
           </a>{" "}
@@ -37,6 +37,7 @@ export default async function WritingPage() {
                 <time dateTime={post.date}>{formatDate(post.date)}</time>
                 <div>
                   <h3>{post.title}</h3>
+                  {post.source && <p className="post-source">From {post.source}</p>}
                   <p>{post.description}</p>
                 </div>
               </Link>
