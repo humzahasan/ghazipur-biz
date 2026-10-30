@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { site, timeline } from "@/content/site";
-import { personId } from "@/lib/schema";
+import { personSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -19,7 +19,8 @@ export default function AboutPage() {
           "@context": "https://schema.org",
           "@type": "ProfilePage",
           url: `${site.url}/about`,
-          mainEntity: { "@id": personId },
+          // Google needs the Person itself here, not just a reference to the one on the home page.
+          mainEntity: (({ "@context": _, ...person }) => person)(personSchema),
         }}
       />
       <section className="container page-head">
