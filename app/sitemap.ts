@@ -12,11 +12,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
   return [
     ...pages,
-    ...posts.map((post) => ({
-      url: `${site.url}/writing/${post.slug}`,
-      lastModified: post.date,
-      changeFrequency: "yearly" as const,
-      priority: 0.6,
-    })),
+    // Imported posts name Dev.to or Medium as canonical, so they stay out of the sitemap.
+    ...posts
+      .filter((post) => !post.canonical)
+      .map((post) => ({
+        url: `${site.url}/writing/${post.slug}`,
+        lastModified: post.date,
+        changeFrequency: "yearly" as const,
+        priority: 0.6,
+      })),
   ];
 }
